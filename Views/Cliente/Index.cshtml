@@ -1,0 +1,265 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Cliente</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dar bg-dark">
+        <div class="container-fluid">
+            <a href="@Url.Action("Index","Home2")" class="link-danger">Contrate Analistas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Acciones
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>@Html.ActionLink("Analistas disponibles", "Index", "Cliente")</li>
+                            <li>@Html.ActionLink("hacer Resolucion", "Index", "Resoluciones")</li>
+                            <li>@Html.ActionLink("Punto de vista del Analista", "Index", "Analistas")</li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>@Html.ActionLink("Salir", "CerrarSesion", "Home")</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Analista" aria-label="Search">
+                    <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="shop_top">
+            <div class="container">
+                <div class="row show_box-top">
+                    <div class="col-md-3 shop_box">
+                        <a href="##">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL4GIPzzhP2fLEbRZsf7UPmkCgAEcDHRJAfA&usqp=CAU" alt="analista 1" class="img-fluid" />
+                            <div class="shop_desc">
+                                <h3><a href="#">aliquam volutp</a></h3>
+                                <p>Lorem ipsum consectetuer adipiscing </p>
+                                <span class="actual">$12.00</span><br>
+                                <span>Estado: trabajando en 1 projecto</span>
+                                <ul class="buttons">
+                                    <li class="cart"><a href="#">Contratar</a></li>
+                                    <li class="shop_btn"><a href="#">ver Prtafolio</a></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 shop_box">
+                        <a href="##.html">
+                            <img src="https://media.istockphoto.com/photos/serious-young-latin-man-picture-id478556765" alt="analista 1" class="img-fluid" />
+                            <div class="shop_desc">
+                                <h3><a href="#">aliquam volutp</a></h3>
+                                <p>Lorem ipsum consectetuer adipiscing </p>
+                                <span class="actual">$12.00</span><br>
+                                <span>Estado: trabajando en 1 projecto</span>
+                                <ul class="buttons">
+                                    <li class="cart"><a href="#">Contratar</a></li>
+                                    <li class="shop_btn"><a href="#">ver Prtafolio</a></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 shop_box">
+                        <a href="##e.html">
+                            <img src="https://media.istockphoto.com/photos/passport-picture-businesswoman-with-brown-hair-picture-id856479974" alt="analista" class="img-fluid" />
+                            <div class="shop_desc">
+                                <h3><a href="#">aliquam volutp</a></h3>
+                                <p>Lorem ipsum consectetuer adipiscing </p>
+                                <span class="actual">$12.00</span><br>
+                                <span>Estado: trabajando en 1 projecto</span>
+                                <ul class="buttons">
+                                    <li class="cart"><a href="#">Contratar</a></li>
+                                    <li class="shop_btn"><a href="#">ver Prtafolio</a></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 shop_box">
+                        <a href="##.html">
+                            <img src="https://media.istockphoto.com/photos/passport-picture-of-a-cool-guy-in-a-blue-shirt-picture-id481864562?k=20&m=481864562&s=612x612&w=0&h=T7L0CtliqKR5zJlLyxIKEV-c0VtOk7bT-Aug3Hkx1bQ=" alt="analista 1" class="img-fluid" />
+                            <div class="shop_desc">
+                                <h3><a href="#">aliquam volutp</a></h3>
+                                <p>Lorem ipsum consectetuer adipiscing </p>
+                                <span class="actual">$12.00</span><br>
+                                <span>Estado: trabajando en 2 projecto (no disponible para otros projectos)</span>
+                                <ul class="buttons">
+                                    <li class="cart"><a href="#">Contratar</a></li>
+                                    <li class="shop_btn"><a href="#">ver Prtafolio</a></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 shop_box">
+                        <a href="##">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbOq6UiqxEL8Gib5ZCrMXlj0OXPnuDKjkjaQ&usqp=CAU" alt="analista 1" class="img-fluid" />
+                            <div class="shop_desc">
+                                <h3><a href="#">aliquam volutp</a></h3>
+                                <p>Lorem ipsum consectetuer adipiscing </p>
+                                <span class="actual">$12.00</span><br>
+                                <span>Estado: trabajando en 1 projecto</span>
+                                <ul class="buttons">
+                                    <li class="cart"><a href="#">Contratar</a></li>
+                                    <li class="shop_btn"><a href="#">ver Prtafolio</a></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 shop_box">
+                        <a href="##">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMgVpXbDYQecFkImZi0jha8X4nGbcxUH1FNw&usqp=CAU" alt="analista 1" class="img-fluid" />
+                            <div class="shop_desc">
+                                <h3><a href="#">aliquam volutp</a></h3>
+                                <p>Lorem ipsum consectetuer adipiscing </p>
+                                <span class="actual">$12.00</span><br>
+                                <span>Estado: trabajando en 2 projecto (no disponible para otros projectos)</span>
+                                <ul class="buttons">
+                                    <li class="cart"><a href="#">Contratar</a></li>
+                                    <li class="shop_btn"><a href="#">ver Prtafolio</a></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 shop_box">
+                        <a href="##">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSewNZXMN74JBZYrAWwoCgrnnr9oxr-Qj7rHQ&usqp=CAU" alt="analista 1" class="img-fluid" />
+                            <div class="shop_desc">
+                                <h3><a href="#">aliquam volutp</a></h3>
+                                <p>Lorem ipsum consectetuer adipiscing </p>
+                                <span class="actual">$12.00</span><br>
+                                <span>Estado: trabajando en 1 projecto</span>
+                                <ul class="buttons">
+                                    <li class="cart"><a href="#">Contratar</a></li>
+                                    <li class="shop_btn"><a href="#">ver Prtafolio</a></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 shop_box">
+                        <a href="##">
+                            <img src="https://media.istockphoto.com/photos/portrait-of-a-young-professional-man-picture-id1086350530?k=20&m=1086350530&s=612x612&w=0&h=jm9UE1LXqdf5R8qEHqQO9Dfelztap08t78bZF6rloPg=" alt="analista 1" class="img-fluid" />
+                            <div class="shop_desc">
+                                <h3><a href="#">aliquam volutp</a></h3>
+                                <p>Lorem ipsum consectetuer adipiscing </p>
+                                <span class="actual">$12.00</span><br>
+                                <span>Estado: trabajando en 2 projecto (no disponible para otros projectos)</span>
+                                <ul class="buttons">
+                                    <li class="cart"><a href="#">Contratar</a></li>
+                                    <li class="shop_btn"><a href="#">ver Prtafolio</a></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center text-white" style="background-color: #caced1;">
+        <div class="container p-4">
+            <section class="">
+                <div class="row">
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                             data-ripple-color="light">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/113.webp"
+                                 class="w-100" />
+                            <a href="#!">
+                                <div class="mask"
+                                     style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                             data-ripple-color="light">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/111.webp"
+                                 class="w-100" />
+                            <a href="#!">
+                                <div class="mask"
+                                     style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                             data-ripple-color="light">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/112.webp"
+                                 class="w-100" />
+                            <a href="#!">
+                                <div class="mask"
+                                     style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                             data-ripple-color="light">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/114.webp"
+                                 class="w-100" />
+                            <a href="#!">
+                                <div class="mask"
+                                     style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                             data-ripple-color="light">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/115.webp"
+                                 class="w-100" />
+                            <a href="#!">
+                                <div class="mask"
+                                     style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                             data-ripple-color="light">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/116.webp"
+                                 class="w-100" />
+                            <a href="#!">
+                                <div class="mask"
+                                     style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            Copyraight 2022:
+            <a class="text-white" href="https://mdbootstrap.com/">Contrate Analistas</a>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

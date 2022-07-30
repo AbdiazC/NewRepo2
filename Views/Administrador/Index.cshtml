@@ -1,0 +1,215 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Administrador</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dar bg-dark">
+        <div class="container-fluid">
+            <a href="@Url.Action("Index","Home2")" class="link-danger">Contrate Analistas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Acciones
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>@Html.ActionLink("Analistas disponibles", "Index", "Cliente")</li>
+                            <li>@Html.ActionLink("hacer Resolucion", "Index", "Resoluciones")</li>
+                            <li>@Html.ActionLink("Punto de vista del Analista", "Index", "Analistas")</li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>@Html.ActionLink("Salir", "CerrarSesion", "Home")</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Desactivado</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Analista" aria-label="Search">
+                    <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <h3>Lista de proyectos</h3>
+    </div>
+    <div class="container p-2">
+        <div class="row">
+            <div class="col">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>
+                                Nombre de Usuario
+                            </th>
+                            <th>
+                                Pago
+                            </th>
+                            <th>
+                                Rol
+                            </th>
+                            <th>
+                                Estado de Pagos
+                            </th>
+                            <th>
+                                Botones
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>
+                                Edwin Jimenez
+                            </th>
+                            <th>
+                                20.000
+                            </th>
+                            <th>
+                                Analista
+                            </th>
+                            <th>
+                                Pagado
+                            </th>
+
+                            <th>
+                                <input type="reset" class="btn btn-danger" value="Eliminar">
+                                <button type="button" class="btn btn-light">Avertir pago</button>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                Daniel Castro
+                            </th>
+                            <th>
+                                20.000
+                            </th>
+                            <th>
+                                Cliente
+                            </th>
+                            <th>
+                                No Pagado
+                            </th>
+                            <th>
+                                <input type="reset" class="btn btn-danger" value="Eliminar">
+                                <button type="button" class="btn btn-light">Avertir pago</button>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                Giovanni Condori
+                            </th>
+                            <th>
+                                20.000
+                            </th>
+                            <th>
+                                Analista
+                            </th>
+                            <th>
+                                Pagado
+                            </th>
+                            <th>
+                                <input type="reset" class="btn btn-danger" value="Eliminar">
+                                <button type="button" class="btn btn-light">Avertir pago</button>
+                            </th>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <footer class="text-center text-white p-3" style="background-color: #caced1;">
+            <div class="container p-4">
+                <section class="">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                            <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                                <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/113.webp" class="w-100" />
+                                <a href="#!">
+                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                            <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                                <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/111.webp" class="w-100" />
+                                <a href="#!">
+                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                            <div class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                                 data-ripple-color="light">
+                                <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/112.webp"
+                                     class="w-100" />
+                                <a href="#!">
+                                    <div class="mask"
+                                         style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                            <div class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                                 data-ripple-color="light">
+                                <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/114.webp"
+                                     class="w-100" />
+                                <a href="#!">
+                                    <div class="mask"
+                                         style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                            <div class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                                 data-ripple-color="light">
+                                <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/115.webp"
+                                     class="w-100" />
+                                <a href="#!">
+                                    <div class="mask"
+                                         style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                            <div class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                                 data-ripple-color="light">
+                                <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/116.webp"
+                                     class="w-100" />
+                                <a href="#!">
+                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                Copyraight 2022:
+                <a class="text-white" href="https://mdbootstrap.com/">Contrate Analistas</a>
+            </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
